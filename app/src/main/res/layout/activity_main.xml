@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="371dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@color/clear"
@@ -22,10 +22,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_plus" />
 
-    <HorizontalScrollView
+    <ScrollView
         android:id="@+id/horizontalScrollView"
         android:layout_width="407dp"
-        android:layout_height="675dp"
+        android:layout_height="690dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -33,13 +33,13 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
+            android:layout_gravity="center_horizontal"
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="300dp"
+                android:layout_width="350dp"
                 android:layout_height="200dp"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="20dp"
                 android:layout_margin="5dp"
                 android:elevation="10dp">
 
@@ -51,11 +51,13 @@
 
                 <ImageButton
                     android:layout_width="wrap_content"
+                    android:id="@+id/imageButton1"
+                    android:clickable="true"
                     android:layout_height="wrap_content"
                     android:background="@color/clear"
                     app:srcCompat="@drawable/ic_more_vertical"
-                    android:layout_marginStart="260dp"
-                    android:layout_marginTop="15dp"/>
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="25dp"/>
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
@@ -85,9 +87,9 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="300dp"
+                android:layout_width="350dp"
                 android:layout_height="200dp"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="20dp"
                 android:layout_margin="5dp"
                 android:elevation="10dp">
 
@@ -98,11 +100,12 @@
                     app:srcCompat="@drawable/background" />
                 <ImageButton
                     android:layout_width="wrap_content"
+                    android:id="@+id/imageButton2"
                     android:layout_height="wrap_content"
                     android:background="@color/clear"
                     app:srcCompat="@drawable/ic_more_vertical"
-                    android:layout_marginStart="260dp"
-                    android:layout_marginTop="15dp"/>
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="25dp"/>
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
@@ -132,9 +135,9 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="300dp"
+                android:layout_width="350dp"
                 android:layout_height="200dp"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="20dp"
                 android:layout_margin="5dp"
                 android:elevation="10dp">
 
@@ -145,17 +148,18 @@
                     app:srcCompat="@drawable/background" />
                 <ImageButton
                     android:layout_width="wrap_content"
+                    android:id="@+id/imageButton3"
                     android:layout_height="wrap_content"
                     android:background="@color/clear"
                     app:srcCompat="@drawable/ic_more_vertical"
-                    android:layout_marginStart="260dp"
-                    android:layout_marginTop="15dp"/>
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="25dp"/>
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Английский"
-                    android:layout_margin="34dp"
+                    android:layout_margin="25dp"
                     android:textColor="@color/white"
                     android:textSize="40dp" />
                 <TextView
@@ -179,9 +183,9 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:layout_width="300dp"
+                android:layout_width="350dp"
                 android:layout_height="200dp"
-                app:cardCornerRadius="8dp"
+                app:cardCornerRadius="20dp"
                 android:layout_margin="5dp"
                 android:elevation="10dp">
 
@@ -192,11 +196,12 @@
                     app:srcCompat="@drawable/background" />
                 <ImageButton
                     android:layout_width="wrap_content"
+                    android:id="@+id/imageButton4"
                     android:layout_height="wrap_content"
                     android:background="@color/clear"
                     app:srcCompat="@drawable/ic_more_vertical"
-                    android:layout_marginStart="260dp"
-                    android:layout_marginTop="15dp"/>
+                    android:layout_marginStart="300dp"
+                    android:layout_marginTop="25dp"/>
 
                 <TextView
                     android:id="@+id/textView10"
@@ -228,6 +233,6 @@
 
 
         </LinearLayout>
-    </HorizontalScrollView>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
