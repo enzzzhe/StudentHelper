@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="12dp"
+    android:background="#25274D">
+
+    <EditText
+        android:id="@+id/input_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColorHint="#AAABB8"
+        android:backgroundTint="#2E9CCA"
+        android:fontFamily="@font/koho"
+        android:hint="@string/add_task"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/from_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/input_task"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/from_button"
+        android:text="От"
+        android:fontFamily="@font/koho"
+        android:textSize="22sp"
+        android:textColor="#AAABB8" />
+
+    <Button
+        android:id="@+id/from_button"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:backgroundTint="#C1C8E4"
+        app:layout_constraintTop_toBottomOf="@id/input_task"
+        app:layout_constraintEnd_toStartOf="@id/to_text"
+        app:layout_constraintStart_toEndOf="@id/from_text"/>
+
+    <TextView
+        android:id="@+id/to_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/input_task"
+        app:layout_constraintStart_toEndOf="@id/from_button"
+        app:layout_constraintEnd_toStartOf="@id/to_button"
+        android:text="до"
+        android:fontFamily="@font/koho"
+        android:textSize="22sp"
+        android:textColor="#AAABB8" />
+
+    <Button
+        android:id="@+id/to_button"
+        android:layout_width="55dp"
+        android:layout_height="35dp"
+        android:backgroundTint="#C1C8E4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_task"
+        app:layout_constraintStart_toEndOf="@id/to_text"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
