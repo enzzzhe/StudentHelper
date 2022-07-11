@@ -8,4 +8,43 @@
         android:id="@+id/mainFragment"
         android:name="com.itis.studenthelper.MainFragment"
         android:label="MainFragment" />
+    app:startDestination="@id/cardsFragment">
+    <fragment
+        android:id="@+id/cardsFragment"
+        android:name="com.summer.appscreen.CardsFragment"
+        android:label="CardsFragment" >
+        <action
+            android:id="@+id/action_cardsFragment_to_singleCardFragment"
+            app:destination="@id/singleCardFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_cardsFragment_to_dateDialog"
+            app:destination="@id/dateDialog"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_cardsFragment_to_menuDialog"
+            app:destination="@id/menuDialog"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/singleCardFragment"
+        android:name="com.summer.appscreen.SingleCardFragment"
+        android:label="SingleCardFragment" />
+    <dialog
+        android:id="@+id/dateDialog"
+        android:name="com.summer.appscreen.DateDialog"
+        android:label="DateDialog" />
+    <dialog
+        android:id="@+id/menuDialog"
+        android:name="com.summer.appscreen.MenuDialog"
+        android:label="MenuDialog" />
 </navigation>
