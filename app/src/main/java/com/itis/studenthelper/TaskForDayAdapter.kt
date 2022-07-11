@@ -10,13 +10,7 @@ import kotlin.collections.ArrayList
 class TaskForDayAdapter (private var taskList: kotlin.collections.ArrayList<TaskForDay>) : RecyclerView.Adapter<TaskForDayHolder>(){
 
     private var calendar = Calendar.getInstance()
-    private var list = taskList.filter {
-        (it.time_from.get(Calendar.DATE) == calendar.get(Calendar.DATE)) &&
-                (it.time_from.get(Calendar.MONTH) == calendar.get(Calendar.MONTH))&&
-                (it.time_from.get(Calendar.YEAR) == calendar.get(Calendar.YEAR))
-    }.sortedBy {
-        it.time_from.get(Calendar.HOUR)
-    }
+    private var list = TaskForDayRepository.chooseTask()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TaskForDayHolder = TaskForDayHolder(
         ItemTaskBinding.inflate(
@@ -33,14 +27,8 @@ class TaskForDayAdapter (private var taskList: kotlin.collections.ArrayList<Task
     override fun getItemCount(): Int = list.size
 
     fun updateData(newList : ArrayList<TaskForDay>){
-        var calendar = Calendar.getInstance()
-        list = newList.filter {
-            (it.time_from.get(Calendar.DATE) == calendar.get(Calendar.DATE)) &&
-                    (it.time_from.get(Calendar.MONTH) == calendar.get(Calendar.MONTH))&&
-                    (it.time_from.get(Calendar.YEAR) == calendar.get(Calendar.YEAR))
-        }.sortedBy {
-            it.time_from.get(Calendar.HOUR)
-        }
+        val calendar = Calendar.getInstance()
+        list = TaskForDayRepository.chooseTask()
         notifyDataSetChanged()
     }
 }

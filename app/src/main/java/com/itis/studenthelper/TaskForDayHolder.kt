@@ -8,7 +8,7 @@ class TaskForDayHolder(private val binding: ItemTaskBinding,) : RecyclerView.Vie
 
     fun OnBind(taskForDay: TaskForDay) {
         with(binding){
-            tiTime.text = "${taskForDay.time_from.get(Calendar.HOUR)}:${taskForDay.time_from.get(Calendar.MINUTE)}-${taskForDay.time_to.get(Calendar.HOUR)}:${taskForDay.time_to.get(Calendar.MINUTE)}"
+            tiTime.text = "${taskForDay.time_from.get(Calendar.HOUR_OF_DAY)}:${taskForDay.time_from.get(Calendar.MINUTE)}-${taskForDay.time_to.get(Calendar.HOUR_OF_DAY)}:${taskForDay.time_to.get(Calendar.MINUTE)}"
             tiTask.text = taskForDay.action
         }
     }
