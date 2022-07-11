@@ -1,4 +1,4 @@
-package com.summer.appscreen
+package com.itis.studenthelper
 
 import android.app.DatePickerDialog
 import android.app.Dialog

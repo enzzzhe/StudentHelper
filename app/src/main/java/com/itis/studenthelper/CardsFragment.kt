@@ -1,11 +1,11 @@
-package com.summer.appscreen
+package com.itis.studenthelper
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.summer.appscreen.databinding.FragmentCardsBinding
+import com.itis.studenthelper.databinding.FragmentCardsBinding
 
 class CardsFragment: Fragment(R.layout.fragment_cards) {
     private var _binding: FragmentCardsBinding? = null
@@ -17,7 +17,7 @@ class CardsFragment: Fragment(R.layout.fragment_cards) {
 
         with(binding){
             card.setOnClickListener{
-                findNavController().navigate(R.id.action_cardsFragment_to_singleCardFragment)
+                findNavController().navigate(R.id.action_cardsFragment_to_deadlineFragment)
             }
             imageButton.setOnClickListener {
                 findNavController().navigate(R.id.action_cardsFragment_to_dateDialog)

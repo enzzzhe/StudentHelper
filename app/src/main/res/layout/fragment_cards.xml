@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/proj"
+    android:background="@color/darkblue"
     tools:context=".MainActivity" >
 
     <ImageButton
@@ -12,7 +12,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="371dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@color/transparent"
@@ -25,10 +24,12 @@
     <ScrollView
         android:id="@+id/horizontalScrollView"
         android:layout_width="407dp"
-        android:layout_height="690dp"
+        android:layout_height="470dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -37,12 +38,12 @@
             android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:layout_width="350dp"
                 android:id="@+id/card"
+                android:layout_width="350dp"
                 android:layout_height="200dp"
-                app:cardCornerRadius="20dp"
                 android:layout_margin="5dp"
-                android:elevation="10dp">
+                android:elevation="10dp"
+                app:cardCornerRadius="20dp">
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -51,38 +52,41 @@
                     app:srcCompat="@drawable/gradient" />
 
                 <ImageButton
-                    android:layout_width="wrap_content"
                     android:id="@+id/imageButton1"
-                    android:clickable="true"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/transparent"
-                    app:srcCompat="@drawable/ic_more_vertical"
                     android:layout_marginStart="300dp"
-                    android:layout_marginTop="25dp"/>
+                    android:layout_marginTop="25dp"
+                    android:background="@color/transparent"
+                    android:clickable="true"
+                    app:srcCompat="@drawable/ic_more_vertical" />
+
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="АиСД"
                     android:layout_margin="25dp"
+                    android:text="АиСД"
                     android:textColor="@color/white"
                     android:textSize="40dp" />
+
                 <TextView
                     android:id="@+id/textView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Осталось 22 дня"
-                    android:layout_marginTop="100dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Осталось 22 дня"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
+
                 <TextView
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Выполнено 40% плана"
-                    android:layout_marginTop="130dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="130dp"
+                    android:text="Выполнено 40% плана"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
             </androidx.cardview.widget.CardView>
@@ -90,47 +94,51 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="350dp"
                 android:layout_height="200dp"
-                app:cardCornerRadius="20dp"
                 android:layout_margin="5dp"
-                android:elevation="10dp">
+                android:elevation="10dp"
+                app:cardCornerRadius="20dp">
 
                 <ImageView
                     android:id="@+id/imageView3"
                     android:layout_width="350dp"
                     android:layout_height="200dp"
                     app:srcCompat="@drawable/gradient" />
+
                 <ImageButton
-                    android:layout_width="wrap_content"
                     android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/transparent"
-                    app:srcCompat="@drawable/ic_more_vertical"
                     android:layout_marginStart="300dp"
-                    android:layout_marginTop="25dp"/>
+                    android:layout_marginTop="25dp"
+                    android:background="@color/transparent"
+                    app:srcCompat="@drawable/ic_more_vertical" />
+
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="АлГем"
                     android:layout_margin="25dp"
+                    android:text="АлГем"
                     android:textColor="@color/white"
                     android:textSize="40dp" />
+
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Осталось 25 дней"
-                    android:layout_marginTop="100dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Осталось 25 дней"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
+
                 <TextView
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Выполнено 35% плана"
-                    android:layout_marginTop="130dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="130dp"
+                    android:text="Выполнено 35% плана"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
             </androidx.cardview.widget.CardView>
@@ -138,47 +146,51 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="350dp"
                 android:layout_height="200dp"
-                app:cardCornerRadius="20dp"
                 android:layout_margin="5dp"
-                android:elevation="10dp">
+                android:elevation="10dp"
+                app:cardCornerRadius="20dp">
 
                 <ImageView
                     android:id="@+id/imageView4"
                     android:layout_width="350dp"
                     android:layout_height="200dp"
                     app:srcCompat="@drawable/gradient" />
+
                 <ImageButton
-                    android:layout_width="wrap_content"
                     android:id="@+id/imageButton3"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/transparent"
-                    app:srcCompat="@drawable/ic_more_vertical"
                     android:layout_marginStart="300dp"
-                    android:layout_marginTop="25dp"/>
+                    android:layout_marginTop="25dp"
+                    android:background="@color/transparent"
+                    app:srcCompat="@drawable/ic_more_vertical" />
+
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Английский"
                     android:layout_margin="25dp"
+                    android:text="Английский"
                     android:textColor="@color/white"
                     android:textSize="40dp" />
+
                 <TextView
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Осталось 10 дней"
-                    android:layout_marginTop="100dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Осталось 10 дней"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
+
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Выполнено 50% плана"
-                    android:layout_marginTop="130dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="130dp"
+                    android:text="Выполнено 50% плана"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
             </androidx.cardview.widget.CardView>
@@ -186,48 +198,51 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="350dp"
                 android:layout_height="200dp"
-                app:cardCornerRadius="20dp"
                 android:layout_margin="5dp"
-                android:elevation="10dp">
+                android:elevation="10dp"
+                app:cardCornerRadius="20dp">
 
                 <ImageView
                     android:id="@+id/imageView9"
                     android:layout_width="350dp"
                     android:layout_height="200dp"
                     app:srcCompat="@drawable/gradient" />
+
                 <ImageButton
-                    android:layout_width="wrap_content"
                     android:id="@+id/imageButton4"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@color/transparent"
-                    app:srcCompat="@drawable/ic_more_vertical"
                     android:layout_marginStart="300dp"
-                    android:layout_marginTop="25dp"/>
+                    android:layout_marginTop="25dp"
+                    android:background="@color/transparent"
+                    app:srcCompat="@drawable/ic_more_vertical" />
 
                 <TextView
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Информатика"
                     android:layout_margin="25dp"
+                    android:text="Информатика"
                     android:textColor="@color/white"
                     android:textSize="40dp" />
+
                 <TextView
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Осталось 5 дней"
-                    android:layout_marginTop="100dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="100dp"
+                    android:text="Осталось 5 дней"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
+
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Выполнено 80% плана"
-                    android:layout_marginTop="130dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="130dp"
+                    android:text="Выполнено 80% плана"
                     android:textColor="@color/white"
                     android:textSize="20dp" />
             </androidx.cardview.widget.CardView>
