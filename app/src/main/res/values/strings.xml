@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">StudentHelper</string>
-    <string name="add_task">Действие</string>
     <string name="Cancel">Отмена</string>
     <string name="OK">ОК</string>
+    <string name="menu_fragment">Menu</string>
+    <string name="tasks_fragment">Tasks</string>
+    <string name="deadlines_fragment">Deadlines</string>
+    <string name="add_task">Действие</string>
 </resources>
