@@ -3,8 +3,7 @@ package com.itis.studenthelper
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import com.example.summerpractice.R
-import com.example.summerpractice.databinding.FragmentMainBinding
+import com.itis.studenthelper.databinding.FragmentMainBinding
 
 class MainFragment: Fragment(R.layout.fragment_main) {
 
