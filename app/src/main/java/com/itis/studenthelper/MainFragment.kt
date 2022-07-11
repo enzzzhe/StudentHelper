@@ -1,8 +1,9 @@
-package com.example.summerpractice
+package com.itis.studenthelper
 
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
+import com.example.summerpractice.R
 import com.example.summerpractice.databinding.FragmentMainBinding
 
 class MainFragment: Fragment(R.layout.fragment_main) {

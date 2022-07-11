@@ -7,7 +7,7 @@
     <EditText
         android:id="@+id/et_add"
         android:layout_width="match_parent"
-        android:layout_height="57dp"
+        android:layout_height="@dimen/spacing_highest"
         android:hint="Добавить" />
 
 </LinearLayout>

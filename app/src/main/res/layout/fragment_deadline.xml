@@ -7,8 +7,8 @@
 
     <View
         android:id="@+id/name"
-        android:layout_width="412dp"
-        android:layout_height="260dp"
+        android:layout_width="@dimen/spacing_view_width"
+        android:layout_height="@dimen/spacing_view_height"
         android:background="@drawable/gradient"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -17,12 +17,12 @@
         android:id="@+id/tv_days"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginTop="@dimen/spacing_huge"
+        android:layout_marginStart="@dimen/spacing_very_large"
         android:fontFamily="@font/bold"
         android:text="Осталось 22 дня"
         android:textColor="@color/white"
-        android:textSize="22sp"
+        android:textSize="@dimen/text_size_small"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_name" />
 
@@ -30,11 +30,11 @@
         android:id="@+id/tv_percent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginTop="@dimen/spacing_smallest"
+        android:layout_marginStart="@dimen/spacing_very_large"
         android:fontFamily="@font/bold"
         android:textColor="@color/white"
-        android:textSize="22sp"
+        android:textSize="@dimen/text_size_small"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_days" />
 
@@ -42,21 +42,21 @@
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="86dp"
+        android:layout_marginStart="@dimen/spacing_very_large"
+        android:layout_marginTop="@dimen/spacing_tv_top"
         android:fontFamily="@font/bold"
         android:text="АиСД"
         android:textColor="@color/white"
-        android:textSize="40sp"
+        android:textSize="@dimen/text_size_big"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/btn_add"
-        android:layout_width="65dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="336dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="@dimen/spacing_wide"
+        android:layout_height="@dimen/spacing_high"
+        android:layout_marginStart="@dimen/spacing_add_start"
+        android:layout_marginTop="@dimen/spacing_small"
         android:background="@color/transparent"
         android:onClick="addTask"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,10 +65,10 @@
 
     <ImageButton
         android:id="@+id/btn_back"
-        android:layout_width="65dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="@dimen/spacing_wide"
+        android:layout_height="@dimen/spacing_high"
+        android:layout_marginStart="@dimen/spacing_smallest"
+        android:layout_marginTop="@dimen/spacing_small"
         android:background="@color/transparent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -77,8 +77,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_deadline"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@color/recyclerview"
+        android:layout_height="@dimen/zero"
+        android:background="@color/darkblue"
         tools:listitem="@layout/item_exercise"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"

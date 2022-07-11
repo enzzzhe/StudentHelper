@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="spacing_smallest">8dp</dimen>
+    <dimen name="spacing_small">12dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="spacing_large">20dp</dimen>
+    <dimen name="spacing_very_large">25dp</dimen>
+    <dimen name="spacing_double">32dp</dimen>
+    <dimen name="spacing_great">35dp</dimen>
+    <dimen name="spacing_greatest">37dp</dimen>
+    <dimen name="spacing_huge">40dp</dimen>
+    <dimen name="spacing_high">45dp</dimen>
+    <dimen name="spacing_very_high">48dp</dimen>
+    <dimen name="spacing_highest">55dp</dimen>
+    <dimen name="spacing_wide">65dp</dimen>
+    <dimen name="spacing_main_tv_height">84dp</dimen>
+    <dimen name="spacing_tv_top">86dp</dimen>
+    <dimen name="spacing_main_iv_height">233dp</dimen>
+    <dimen name="spacing_view_height">260dp</dimen>
+    <dimen name="spacing_tv_width">271dp</dimen>
+    <dimen name="spacing_add_start">336dp</dimen>
+    <dimen name="spacing_main_iv_width">352dp</dimen>
+    <dimen name="spacing_op_start">368dp</dimen>
+    <dimen name="spacing_main_tv_width">396dp</dimen>
+    <dimen name="spacing_view_width">412dp</dimen>
+    <dimen name="spacing_checkbox_width">422dp</dimen>
+
+    <dimen name="text_size_small">22sp</dimen>
+    <dimen name="text_size_big">40sp</dimen>
+</resources>

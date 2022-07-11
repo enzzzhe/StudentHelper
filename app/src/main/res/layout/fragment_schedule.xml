@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#25274D">
+    android:background="@color/darkblue">
 
     <com.github.mikephil.charting.charts.PieChart
         android:id="@+id/pie_chart_tasks"
@@ -15,8 +15,8 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_task"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginTop="8dp"
+        android:layout_height="@dimen/zero"
+        android:layout_marginTop="@dimen/spacing_smallest"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/pie_chart_tasks"

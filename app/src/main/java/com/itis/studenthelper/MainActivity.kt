@@ -7,6 +7,7 @@ import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
+import com.example.summerpractice.R
 
 class MainActivity : AppCompatActivity() {
 
