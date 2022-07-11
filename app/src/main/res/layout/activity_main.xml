@@ -38,6 +38,7 @@
 
             <androidx.cardview.widget.CardView
                 android:layout_width="350dp"
+                android:id="@+id/card"
                 android:layout_height="200dp"
                 app:cardCornerRadius="20dp"
                 android:layout_margin="5dp"
@@ -47,14 +48,14 @@
                     android:id="@+id/imageView2"
                     android:layout_width="350dp"
                     android:layout_height="200dp"
-                    app:srcCompat="@drawable/background" />
+                    app:srcCompat="@drawable/gradient" />
 
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:id="@+id/imageButton1"
                     android:clickable="true"
                     android:layout_height="wrap_content"
-                    android:background="@color/clear"
+                    android:background="@color/transparent"
                     app:srcCompat="@drawable/ic_more_vertical"
                     android:layout_marginStart="300dp"
                     android:layout_marginTop="25dp"/>
@@ -97,12 +98,12 @@
                     android:id="@+id/imageView3"
                     android:layout_width="350dp"
                     android:layout_height="200dp"
-                    app:srcCompat="@drawable/background" />
+                    app:srcCompat="@drawable/gradient" />
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:id="@+id/imageButton2"
                     android:layout_height="wrap_content"
-                    android:background="@color/clear"
+                    android:background="@color/transparent"
                     app:srcCompat="@drawable/ic_more_vertical"
                     android:layout_marginStart="300dp"
                     android:layout_marginTop="25dp"/>
@@ -145,12 +146,12 @@
                     android:id="@+id/imageView4"
                     android:layout_width="350dp"
                     android:layout_height="200dp"
-                    app:srcCompat="@drawable/background" />
+                    app:srcCompat="@drawable/gradient" />
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:id="@+id/imageButton3"
                     android:layout_height="wrap_content"
-                    android:background="@color/clear"
+                    android:background="@color/transparent"
                     app:srcCompat="@drawable/ic_more_vertical"
                     android:layout_marginStart="300dp"
                     android:layout_marginTop="25dp"/>
@@ -193,12 +194,12 @@
                     android:id="@+id/imageView9"
                     android:layout_width="350dp"
                     android:layout_height="200dp"
-                    app:srcCompat="@drawable/background" />
+                    app:srcCompat="@drawable/gradient" />
                 <ImageButton
                     android:layout_width="wrap_content"
                     android:id="@+id/imageButton4"
                     android:layout_height="wrap_content"
-                    android:background="@color/clear"
+                    android:background="@color/transparent"
                     app:srcCompat="@drawable/ic_more_vertical"
                     android:layout_marginStart="300dp"
                     android:layout_marginTop="25dp"/>
@@ -207,7 +208,7 @@
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="АиСД"
+                    android:text="Информатика"
                     android:layout_margin="25dp"
                     android:textColor="@color/white"
                     android:textSize="40dp" />
@@ -215,7 +216,7 @@
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Осталось 22 дня"
+                    android:text="Осталось 5 дней"
                     android:layout_marginTop="100dp"
                     android:layout_marginStart="20dp"
                     android:textColor="@color/white"
@@ -224,7 +225,7 @@
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Выполнено 40% плана"
+                    android:text="Выполнено 80% плана"
                     android:layout_marginTop="130dp"
                     android:layout_marginStart="20dp"
                     android:textColor="@color/white"
