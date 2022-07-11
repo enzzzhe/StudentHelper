@@ -1,11 +1,8 @@
-package com.summer.appscreen
+package com.itis.studenthelper
 
 import android.app.AlertDialog
 import android.app.Dialog
 import android.os.Bundle
-import android.view.View
-import android.widget.Toast
-import androidx.annotation.NonNull
 import androidx.fragment.app.DialogFragment
 
 class MenuDialog: DialogFragment() {

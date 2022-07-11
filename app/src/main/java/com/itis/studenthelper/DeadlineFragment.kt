@@ -5,6 +5,7 @@ import android.view.View
 import android.widget.CheckBox
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.itis.studenthelper.databinding.FragmentDeadlineBinding
 
 class DeadlineFragment : Fragment(R.layout.fragment_deadline) {
@@ -14,9 +15,6 @@ class DeadlineFragment : Fragment(R.layout.fragment_deadline) {
 
     private var adapter: DeadlineAdapter? = null
 
-    lateinit var checkBox: CheckBox
-    lateinit var percentOfPlan: TextView
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentDeadlineBinding.bind(view)
@@ -24,19 +22,11 @@ class DeadlineFragment : Fragment(R.layout.fragment_deadline) {
         adapter = DeadlineAdapter(TaskRepository.tasks)
         binding.rvDeadline.adapter = adapter
 
-        countPercent()
-    }
-
-    fun countPercent(){
-        var count = 0
-        var percent = 0
-        percentOfPlan = binding.tvPercent
-
-        if (checkBox.isChecked){
-            count += 1
+        with(binding){
+            btnBack.setOnClickListener{
+                findNavController().navigate(R.id.action_deadlineFragment_to_cardsFragment)
+            }
         }
-        percent = 100 * count / TaskRepository.tasks.size
-        percentOfPlan.append("Выполнено $percent% плана")
     }
 
     override fun onDestroyView() {

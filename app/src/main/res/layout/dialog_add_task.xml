@@ -39,7 +39,7 @@
         android:id="@+id/from_button"
         android:layout_width="@dimen/spacing_highest"
         android:layout_height="@dimen/spacing_great"
-        android:backgroundTint="@color/frame"
+        android:backgroundTint="@color/light"
         app:layout_constraintTop_toBottomOf="@id/input_task"
         app:layout_constraintEnd_toStartOf="@id/to_text"
         app:layout_constraintStart_toEndOf="@id/from_text"/>
@@ -60,7 +60,7 @@
         android:id="@+id/to_button"
         android:layout_width="@dimen/spacing_highest"
         android:layout_height="@dimen/spacing_great"
-        android:backgroundTint="@color/frame"
+        android:backgroundTint="@color/light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/input_task"
         app:layout_constraintStart_toEndOf="@id/to_text"/>
