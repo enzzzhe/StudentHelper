@@ -17,20 +17,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        countPercent()
-    }
-
-    fun countPercent(){
-        var count = 0
-        var percent = 0
-        checkBox = findViewById(R.id.checkBox)
-        percentOfPlan = findViewById(R.id.tv_percent)
-
-        if (checkBox.isChecked){
-            count += 1
-        }
-        percent = 100 * count / TaskRepository.tasks.size
-        percentOfPlan.append("Выполнено $percent% плана")
     }
 
     fun addTask(view: View) {
