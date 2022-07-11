@@ -4,34 +4,36 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/darkblue">
+    android:background="#25274D">
 
     <com.github.mikephil.charting.charts.PieChart
-        android:id="@+id/pie_chart_tasks"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/chart"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
         tools:ignore="MissingConstraints" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_task"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/zero"
-        android:layout_marginTop="@dimen/spacing_smallest"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pie_chart_tasks"
+        app:layout_constraintTop_toBottomOf="@id/chart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:itemCount="7"
         tools:listitem="@layout/item_task"/>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/add_task_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/ic_add"
+        android:background="#25274D"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_add" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

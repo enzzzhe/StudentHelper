@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/koho_bold"
         android:textColor="@color/white"
+
         android:textSize="@dimen/text_size_small"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="00:00 - 00:00" />
@@ -25,6 +26,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/libre_caslon_display"
         android:textColor="@color/white"
+
         android:textSize="@dimen/text_size_small"
         app:layout_constraintTop_toBottomOf="@id/ti_time"
         tools:text="task" />

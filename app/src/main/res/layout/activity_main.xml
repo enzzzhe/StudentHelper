@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:background="@color/darkblue"
     tools:context="com.itis.studenthelper.MainActivity">
 
@@ -27,3 +28,4 @@
             app:menu="@menu/menu_main" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
