@@ -3,13 +3,34 @@ package com.itis.studenthelper
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.CheckBox
 import android.widget.EditText
+import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var checkBox: CheckBox
+    lateinit var percentOfPlan: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        countPercent()
+    }
+
+    fun countPercent(){
+        var count = 0
+        var percent = 0
+        checkBox = findViewById(R.id.checkBox)
+        percentOfPlan = findViewById(R.id.tv_percent)
+
+        if (checkBox.isChecked){
+            count += 1
+        }
+        percent = 100 * count / TaskRepository.tasks.size
+        percentOfPlan.append("Выполнено $percent% плана")
     }
 
     fun addTask(view: View) {
