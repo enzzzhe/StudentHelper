@@ -36,6 +36,9 @@
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_cardsFragment_to_secondDeadlineFragment"
+            app:destination="@id/secondDeadlineFragment" />
     </fragment>
     <dialog
         android:id="@+id/dateDialog"
@@ -57,6 +60,14 @@
         tools:layout="@layout/fragment_deadline">
         <action
             android:id="@+id/action_deadlineFragment_to_cardsFragment"
+            app:destination="@id/cardsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondDeadlineFragment"
+        android:name="com.itis.studenthelper.SecondDeadlineFragment"
+        android:label="SecondDeadlineFragment" >
+        <action
+            android:id="@+id/action_secondDeadlineFragment_to_cardsFragment"
             app:destination="@id/cardsFragment" />
     </fragment>
 </navigation>

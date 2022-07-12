@@ -19,6 +19,9 @@ class CardsFragment: Fragment(R.layout.fragment_cards) {
             card.setOnClickListener{
                 findNavController().navigate(R.id.action_cardsFragment_to_deadlineFragment)
             }
+            card2.setOnClickListener{
+                findNavController().navigate(R.id.action_cardsFragment_to_secondDeadlineFragment)
+            }
             imageButton.setOnClickListener {
                 findNavController().navigate(R.id.action_cardsFragment_to_dateDialog)
             }
