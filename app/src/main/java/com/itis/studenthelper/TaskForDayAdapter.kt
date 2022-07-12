@@ -7,7 +7,9 @@ import com.itis.studenthelper.databinding.ItemTaskBinding
 import java.util.*
 import kotlin.collections.ArrayList
 
-class TaskForDayAdapter (private var taskList: kotlin.collections.ArrayList<TaskForDay>) : RecyclerView.Adapter<TaskForDayHolder>(){
+class TaskForDayAdapter(private var taskList: ArrayList<TaskForDay>,
+                        private val onItemClick: (TaskForDay)->Unit
+) : RecyclerView.Adapter<TaskForDayHolder>(){
 
     private var calendar = Calendar.getInstance()
     private var list = TaskForDayRepository.chooseTask()
@@ -17,7 +19,7 @@ class TaskForDayAdapter (private var taskList: kotlin.collections.ArrayList<Task
             LayoutInflater.from(parent.context),
             parent,
             false
-        )
+        ),onItemClick
     )
 
     override fun onBindViewHolder(holder: TaskForDayHolder, position: Int) {

@@ -6,4 +6,6 @@
     <string name="tasks_fragment">Tasks</string>
     <string name="deadlines_fragment">Deadlines</string>
     <string name="add_task">Действие</string>
+    <string name="delete">Удалить</string>
+    <string name="edite">Редактировать</string>
 </resources>

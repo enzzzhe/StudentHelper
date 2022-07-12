@@ -25,5 +25,3 @@ build/**
 classes/**
 target/**
 /gradle.properties
-/gradle.properties
-.idea/misc.xml

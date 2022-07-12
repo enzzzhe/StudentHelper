@@ -4,15 +4,13 @@ import android.app.DatePickerDialog
 import android.app.TimePickerDialog
 import android.graphics.Color
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.TextView
 import androidx.fragment.app.Fragment
-import com.github.mikephil.charting.animation.Easing
 import com.github.mikephil.charting.charts.PieChart
-import com.github.mikephil.charting.components.Description
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
 import com.github.mikephil.charting.data.PieEntry
@@ -98,8 +96,9 @@ class ScheduleFragment : Fragment(R.layout.fragment_schedule){
     }
 
     private fun initAdapter(){
-        adapter = TaskForDayAdapter(TaskForDayRepository.taskArray)
-
+        adapter = TaskForDayAdapter(TaskForDayRepository.taskArray) {
+            onMenuClick(it)
+        }
     }
     fun showTimePickerDialog(v: View):Calendar {
         val calendar = Calendar.getInstance()
@@ -136,12 +135,32 @@ class ScheduleFragment : Fragment(R.layout.fragment_schedule){
         val dataSet = PieDataSet(yValues, "Дела на день")
         dataSet.sliceSpace = 3f
         dataSet.selectionShift = 5f
-        dataSet.setColors(*ColorTemplate.JOYFUL_COLORS)
+        dataSet.setColors(*ColorTemplate.PASTEL_COLORS)
 
         val data = PieData(dataSet)
         data.setValueTextSize(10f)
         data.setValueTextColor(Color.BLACK)
 
         pieChart?.setData(data)
+    }
+
+    fun onMenuClick(taskForDay:TaskForDay){
+        val builder = AlertDialog.Builder(requireContext()).create()
+        val view = layoutInflater.inflate(R.layout.dialog_menu,null)
+        builder.setView(view)
+
+        val  edit = view.findViewById<TextView>(R.id.edit)
+        val  delete = view.findViewById<TextView>(R.id.delete)
+        val  cancel = view.findViewById<TextView>(R.id.cancel_action)
+
+
+        edit.setOnClickListener {
+        }
+        delete.setOnClickListener {
+        }
+        cancel.setOnClickListener {
+            builder.dismiss()
+        }
+        builder.show()
     }
 }
